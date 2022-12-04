@@ -1,0 +1,87 @@
+
+.slide{
+    width: 100%;
+    height: 100%;
+    display: flex!important;
+    justify-content: space-between!important;
+    .slide-left-section{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding-right: 20px;
+        @media screen and (min-width: $tablet-width){
+            width: 50%;
+        }
+        .number{
+            width: 34px;
+            height: 34px;
+            background-color: $background-number;
+            border-radius: 50%;
+            position: relative;
+            margin-bottom: 39px;
+            @media screen and (min-width: $tablet-width){
+                width: 50px;
+                height: 50px;
+            }
+            p{
+                position: absolute;
+                font-family: $title-f-family;
+                color: $details;
+                font-weight: 700;
+                font-size: 22px;
+                line-height: 40px;
+                top: 50%;
+                left: 50%;
+                margin-right: -50%;
+                transform: translate(-50%, -50%);
+            @media screen and (min-width: $tablet-width){
+                    font-size: 32px;
+                    line-height: 40px;
+                }
+            }
+        }
+        .slider-title{
+            h3{
+                font-family: $title-f-family;
+                color: $titles-h;
+                font-style: normal;
+                padding-bottom: 22px;
+
+                font-weight: 700;
+                font-size: 34px;
+                line-height: 40px;
+                @media screen and (min-width: $tablet-width){
+                    font-size: 42px;
+                    line-height: 46px;
+                }
+            }
+        }
+        .slider-paragraph{
+            p{
+                font-style: normal;
+                color: $title-menu;
+                padding-bottom: 30px;
+
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 26px;
+                @media screen and (min-width: $tablet-width){
+                    font-size: 20px;
+                    line-height: 28px;
+                }
+            }
+        }
+    }
+    .slider-right-section{
+        display: none;
+        @media screen and (min-width: $tablet-width){
+            display: block;
+        }
+        width: 50%;
+        img{
+            width: 100%!important;
+            height: auto;
+        }
+    }
+}

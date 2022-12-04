@@ -1,0 +1,91 @@
+.slider-main{
+    .side-holder{
+        .related-slides{
+            .related-prev-arrow{
+                border: none;
+                background-color: white;
+                background-image: url('/frontend/src/styles/img/related-slider-arrow.svg');
+                transform: rotate(180deg);
+                width: 45px;
+                height: 45px;
+                border-radius: 50%;
+                background-position: center center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                top: -50px;
+                right: 55px;
+            }
+            .related-next-arrow{
+                border: none;
+                background-color: white;
+                background-image: url('/frontend/src/styles/img/related-slider-arrow.svg');
+                width: 45px;
+                height: 45px;
+                border-radius: 50%;
+                background-position: center center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                top: -50px;
+                right: 5px;
+            }
+            .related-slide{
+                border: 1px solid #ECECEC;
+                border-top: 3px solid $details;
+                border-radius: 5px 5px 3px 3px;
+                h4{
+                    padding: 24px 22px 20px 20px;
+                    color: $titles-h;
+                    font-family: 'Public Sans';
+                    font-weight: 700;
+                    font-size: 22px;
+                    line-height: 34px;
+                    @media screen and (min-width: 600px){
+                        font-size: 30px;
+                        line-height: 40px;
+                    }
+                }
+                .r-m-g-b-text{
+                    padding: 20px 5px 20px 20px;
+                }
+            }
+        }
+    }
+}
+
+// tha same height of boxes
+.slick-track
+{
+    display: flex !important;
+}
+.slick-slide
+{
+    height: inherit !important;
+}
+// ---------------------------------------------------------------
+
+//  space between h4 and read more on slide 
+.slick-initialized{
+    .slick-slide {
+        display: flex!important;
+        flex-direction: column!important;
+        justify-content: space-between!important;
+    }
+}
+// __________________________________________________________________________
+
+// ------------------space between slides -------------------------------------
+ .slick-slide {
+    margin: 0 12.5px;
+}
+
+.slick-list {
+    margin: 0 -12.5px;
+}
+// _______________________________________________________________________________
+
+// ------------ end of the carousel ---------------------------------------------
+.slick-disabled {
+    opacity: 0.1;
+    pointer-events:none;
+}
+// ________________________________________________________________________________________

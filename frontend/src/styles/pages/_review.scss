@@ -1,0 +1,777 @@
+
+// review hero section
+
+.review-hero-block{
+    .review-hero-holder{
+        background-color: $background-lightblue;
+        margin: 0 auto 70px auto;
+        padding: 50px 0 30px 0;
+        height: auto;
+        position: relative;
+        &::before{
+            content: "";
+            display: block;
+            position: absolute;
+            border-radius: 50% 50% 0 0;
+            width: 51%;
+            height: 30px;
+            background-color: white;
+            left: 0px;
+            bottom: -20px;
+        }
+        &::after{
+            content: "";
+            display: block;
+            position: absolute;
+            border-radius: 0 0 50% 50%;
+            width: 50%;
+            height: 30px;
+            background-color: $background-lightblue;
+            right: 0px;
+            bottom: -13px;
+        }
+        .review-hero-content{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            @media screen and (min-width: $tablet-width){
+                flex-direction: row;
+                align-items: flex-start;
+                justify-content: space-between;
+            }
+            .review-hero-title{
+                @media screen and (min-width: $tablet-width){
+                    width: 50%;
+                }
+                h1{
+                    color: $title-review-h1;
+                    font-family: 'Public Sans';
+                    font-weight: 700;
+                    font-size: 34px;
+                    line-height: 40px;
+                    text-align: center;
+                    padding-bottom: 30px;
+                    @media screen and (min-width: $tablet-width){
+                        font-size: 56px;
+                        line-height: 66px;
+                        text-align: left;
+                    }
+                }
+            }
+            .review-hero-logo-button-block{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding-left: 20px;
+                @media screen and (min-width: $tablet-width){
+                    align-items: flex-start;
+                }
+                .review-hero-logo{
+                    padding-bottom: 15px;
+                    img{
+                        width: 100%;
+                        max-width: 346px;
+                    }
+                }
+            }
+            
+            
+            
+        }
+    }
+}
+// -----------------------------------------------------------------------------------------------------------------------------------
+
+.review-box-under-hero{
+    padding-top: 10px;
+    @media screen and (min-width: $phone-width){
+    padding-top: 35px;
+    }
+    p{
+        color: #7A7A7A;
+        font-style: italic;
+        font-weight: 400;
+        padding: 20px 22px;
+        border: 1px solid #E9E9E9;
+        border-radius: 5px;
+        text-align: center;
+        font-size: 14px;
+        line-height: 20px;
+        @media screen and (min-width: $phone-width){
+            font-size: 16px;
+            line-height: 26px;
+            padding: 28px 30px;
+        }
+    }
+}
+
+
+
+// ---------------------------------------------------------------------------------------------
+
+.review-first-paragraph-block{
+    p{
+        padding-top: 60px;
+        font-family: 'Open Sans';
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 26px;
+        @media screen and (min-width: $phone-width){
+            font-size: 22px;
+            line-height: 34px;
+        }
+    }
+}
+
+// ------------------------------------------------------------------------------------------------
+.review-quick-navigation{
+    .review-quick-navigation-holder{
+        margin-top: 60px;
+        border: 1px solid $details;
+        border-radius: 5px;
+        padding: 30px 28px 30px 28px;
+        @media screen and (min-width: $phone-width){
+            margin-top: 110px;
+        }
+        h4{
+            color: $titles-h;
+            font-family: 'Public Sans';
+            font-weight: 700;
+            font-size: 30px;
+            line-height: 40px;
+        }
+        p{
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 20px;
+            padding-top: 20px;
+            cursor: pointer;
+            @media screen and (min-width: $phone-width){
+                font-size: 18px;
+                line-height: 28px;
+            }
+        }
+    }
+}
+
+// --------------------------------------------------------------------------------
+
+.review-h2-paragraph-block{
+    h2{
+        color: $titles-h;
+        font-family: 'Public Sans';
+        font-weight: 700;
+        padding-top: 60px;
+        font-size: 30px;
+        line-height: 40px;
+        text-align: center;
+        @media screen and (min-width: $phone-width){
+            text-align: left;
+            padding-top: 100px;
+            font-size: 50px;
+            line-height: 59px;
+        }
+    }
+    p{
+        font-weight: 400;
+        padding-top: 40px;
+        font-size: 16px;
+        line-height: 22px;
+        @media screen and (min-width: $phone-width){
+        font-size: 18px;
+        line-height: 28px;
+        }
+    }
+}
+
+
+// ----------------------------------------------------------------------------------
+
+
+.review-northwest-pros-cons{
+    background: $background-lightblue;
+    border-radius: 5px;
+    max-width: 870px;
+    margin: 0 auto;
+    width: 100%;
+    margin-top: 100px;
+    .review-northwest-holder{
+        padding-top: 35px;
+        padding-bottom: 35px;
+        @media screen and (min-width: $tablet-width){
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+        }
+        .review-northwest-first-block{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            @media screen and (min-width: $tablet-width){
+                padding-left: 20px;
+                align-items: flex-start;
+            }
+            .review-hero-logo{
+                padding-bottom: 20px;
+                img{
+                    width: 100%;
+                    max-width: 346px;
+                }
+            }
+            .review-northwest-ratings{
+                display: flex;
+                align-items: center;
+                padding-bottom: 40px;
+                @media screen and (min-width: $tablet-width){
+                    padding-bottom: 0px;
+                }
+                p{
+                    font-weight: 700;
+                    font-size: 22px;
+                    line-height: 34px;
+                }
+                .review-northwest-ratings-stars{
+                    margin-left: 10px;
+                }
+            }
+        }
+        .review-northwest-second-block{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            @media screen and (min-width: $tablet-width){
+                align-items: flex-end;
+                padding-right: 20px;
+            }
+            .review-northwest-price{
+                display: flex;
+                align-items: flex-end;
+                padding-top: 20px;
+                h6{
+                    color: $title-price-pros-cons;
+                    font-family: 'Public Sans';
+                    font-weight: 700;
+                    font-size: 30px;
+                    line-height: 40px;
+                }
+                p{
+                    color: $title-price-pros-cons;
+                    font-size: 18px;
+                    line-height: 24px;
+                    margin-left: 8px;
+                    margin-bottom: 2px;
+                }
+            }
+        }
+    }
+
+
+
+
+    .review-northwest-pros-cons-middle-line{
+        border: 1px solid #EDEDED;
+        background-color: #EDEDED;
+        margin: 0 auto;
+        max-width: 700px;
+    }
+
+
+
+    .review-pros-cons-holder{
+        padding-top: 47px;
+        padding-bottom: 31px;
+        @media screen and (min-width: $tablet-width){
+            display: flex;
+            justify-content: space-between;
+        }
+        .review-pros{
+            @media screen and (min-width: $tablet-width){
+                width: 50%;
+                padding-right: 20px;
+            }
+            h4{
+                color: $title-price-pros-cons;
+                font-family: 'Public Sans';
+                font-weight: 700;
+                font-size: 30px;
+                line-height: 40px;
+            }
+            li{
+                color: $title-price-pros-cons;
+                font-weight: 400;
+                display: flex;
+                align-items: flex-start;
+                font-size: 16px;
+                line-height: 22px;
+                padding-top: 18px;
+                @media screen and (min-width: $phone-width){
+                    font-size: 18px;
+                    line-height: 24px;
+                    padding-top: 22px;
+                }
+                &::before{
+                    content: url('/frontend/src/styles/img/pros-tick.svg');
+                    width: 26px;
+                    height: 26px;
+                    margin-right: 20px;
+                }
+            }
+        }
+        .review-cons{
+            padding-top: 47px;
+            @media screen and (min-width: $tablet-width){
+                width: 50%;
+                padding-top: 0;
+            }
+            h4{
+                color: $title-price-pros-cons;
+                font-family: 'Public Sans';
+                font-weight: 700;
+                font-size: 30px;
+                line-height: 40px;
+            }
+            li{
+                color: $title-price-pros-cons;
+                font-weight: 400;
+                display: flex;
+                align-items: flex-start;
+                font-size: 16px;
+                line-height: 22px;
+                padding-top: 18px;
+                @media screen and (min-width: $phone-width){
+                    font-size: 18px;
+                    line-height: 24px;
+                    padding-top: 22px;
+                }
+                &::before{
+                    content: url('/frontend/src/styles/img/review-red-x.svg');
+                    width: 26px;
+                    height: 26px;
+                    margin-right: 20px;
+                }
+            }
+        }
+    }
+
+}        
+
+
+
+// -----------------------------------------------------------------------------------------------------------
+
+
+.review-two-blue-box{
+    .review-two-blue-box-holder{
+        margin-top: 55px;
+        padding: 25px;
+        background: $background-lightblue;
+        border-radius: 5px;
+        h3{
+            color: $titles-h;
+            font-family: 'Public Sans';
+            font-weight: 700;
+            padding: 35px 0 42px 10px;
+            line-height: 40px;
+            font-size: 30px;
+            @media screen and (min-width: $phone-width){
+                font-size: 36px;
+                line-height: 42px;
+            }
+        }
+        li{
+            color: $title-menu;
+            font-weight: 400;
+            font-size: 16px;
+            padding-bottom: 22px;
+            line-height: 22px;
+            display: flex;
+            align-items: flex-start;
+            @media screen and (min-width: $phone-width){
+                font-size: 18px;
+                line-height: 28px;
+                padding-bottom: 28px;
+
+            }
+            &::before{
+                content: url('/frontend/src/styles/img/white-tick-in-blue.svg');
+                width: 26px;
+                height: 26px;
+                margin-right: 18px;
+            }
+        }
+    }
+}
+
+
+// -----------------------------  review three cards block
+
+.review-three-cards{
+    margin-top: 60px;
+    @media screen and (min-width: $tablet-width){
+        margin-top: 100px;
+    }
+    .side-holder{
+        max-width: 1100px;
+        .review-three-cards-holder{
+            display: grid;
+            @media screen and (min-width: 600px){
+                grid-template-columns: 1fr 1fr;
+                column-gap: 10px;
+            }
+            @media screen and (min-width: 900px){
+                grid-template-columns: 1fr 1fr 1fr;
+            }
+            .review-card{
+                padding: 30px 20px 30px 20px;
+                border: 1px solid #F7F7F7;
+                box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.06);
+                border-radius: 5px;
+                margin-top: 10px;
+                .height-50-percent{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: space-between;
+                    flex-wrap: nowrap;
+                    h3{
+                        text-align: center;
+                        color: $background-grid-section-blue;
+                        font-family: 'Public Sans';
+                        font-weight: 700;
+                        font-size: 30px;
+                        line-height: 34px;
+                    }
+                    p{
+                        text-align: center;
+                        color: #7A7A7A;
+                        font-weight: 400;
+                        font-size: 16px;
+                        line-height: 22px;
+                        padding-top: 17px;
+                    }
+                    .review-three-cards-price{
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        h4{
+                            text-align: center;
+                            font-family: 'Public Sans';
+                            font-weight: 700;
+                            font-size: 42px;
+                            line-height: 46px;
+                            padding-top: 17px;
+                        }
+                        h5{
+                            text-align: center;
+                            color: #7A7A7A;
+                            font-weight: 700;
+                            font-size: 22px;
+                            padding-bottom: 7px;
+                        }
+                        .review-three-cards-price-row{
+                            display: flex;
+                            align-items: flex-end;
+                            
+                        }
+                    }
+                }
+                .review-hero-button{
+                    width: 100%;
+                    min-width: 240px;
+                    margin-top: 17px;
+                    a{
+                        p{
+                            color: white;
+                            padding: 17px 0 17px 22px;
+                            @media screen and (min-width: $tablet-width){
+                                font-size: 18px;
+                                line-height: 22px;
+                            }
+                        }
+                        img{
+                            @media screen and (min-width: $tablet-width){
+                                padding-right: 22px;
+                            } 
+                        }
+                    }
+                }
+                ul{
+
+                    padding-top: 29px;
+                    padding-bottom: 40px;
+                    li{
+                        color: $title-price-pros-cons;
+                        font-weight: 400;
+                        font-size: 16px;
+                        line-height: 22px;
+                        padding-top: 17px;
+                        &::before{
+                            content: url('/frontend/src/styles/img/review-blue-tick-solo.svg');
+                            margin-right: 15px;
+                        }
+                    }
+                    .review-card-bullet{
+                        &::before{
+                            content: url('/frontend/src/styles/img/bullet.svg');
+                            margin-right: 13px;
+                            padding-top: 0px;
+                            width: 6px;
+                            height: 6px;
+                            position: relative;
+                            top: -3px;
+                            left: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// --------------------review-does-northwest-registered-agent-have-good-customer-service
+
+
+.review-does-northwest-registered-agent-have-good-customer-service{
+    display: flex;
+    margin-top: 40px;
+    .review-does-northwest-registered-agent-have-good-customer-service-rectangle{
+        width: 34px;
+        height: 5px;
+        background-color: $details;
+        flex-shrink: 0;
+        margin: 13px 14px 0 14px;
+    }
+    div{
+
+        p{
+            padding-top: 0;
+            color: $titles-h;
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 25px;
+            @media screen and (min-width: $phone-width){
+                font-size: 22px;
+                line-height: 34px;
+            }
+        }
+    }
+}
+
+
+// review orange block
+
+.review-orange-block-holder{
+    margin-top: 60px;
+    background: #FFF3ED;
+    border-radius: 5px;
+    padding: 35px;
+    ul{
+        li{
+            color: $title-menu;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 22px;
+            display: flex;
+            align-items: flex-start;
+            @media screen and (min-width: $phone-width){
+                font-size: 18px;
+                line-height: 26px;
+            }
+        }
+        .review-orange-block-holder-p1{
+            &::before{
+                content: url('/frontend/src/styles/img/review-orange-tick.svg');
+                margin-right: 12px;
+                width: 26px;
+                height: 26px;
+            }
+        }   
+        .review-orange-block-holder-p2{
+            margin-top: 40px;
+            &::before{
+                content: url('/frontend/src/styles/img/review-orange-gray-x.svg');
+                width: 26px;
+                height: 26px;
+                margin-right: 12px;
+            }
+            
+        }   
+      
+    }
+}
+
+
+
+// --------------------   northwest-expand-card-----------------------------------
+.northwest-expand-card-holder{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #F9F9F9;
+    border: 1px solid #E2E2E2;
+    box-shadow: 0px 6px 10px -3px rgba(0, 0, 0, 0.05);
+    border-radius: 5px;
+    padding: 25px 11px;
+    @media screen and (min-width: $tablet-width){
+        align-items: flex-start;
+        padding: 30px 30px 0 30px;
+    }
+    .review-northwest-first-block{
+        .northwest-expand-card-ratings{
+            display: flex;
+            align-items: center;
+            p{
+                color: $title-price-pros-cons;
+                font-weight: 700;
+                font-size: 18px;
+                line-height: 28px;
+                margin-right: 8px;
+                @media screen and (min-width: $tablet-width){
+                    font-size: 22px;
+                    line-height: 34px;
+                }
+            }
+        }
+    }
+        
+    .northwest-expand-card-second-block{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        @media screen and (min-width: $tablet-width){
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;  
+            padding-top: 12px;
+                    }
+        .review-hero-logo{
+            padding-top: 20px;
+            @media screen and (min-width: $tablet-width){
+                padding-top: 0;
+            }
+            img{
+                width: 100%;
+                max-width: 250px;
+            }
+        }
+        .northwest-expand-card-price{
+            display: flex;
+            align-items: flex-end;
+            flex-shrink: 0;
+            h6{
+                padding-top: 20px;
+                color: $title-menu;
+                font-weight: 700;
+                font-size: 20px;
+                line-height: 28px;
+                @media screen and (min-width: $tablet-width){
+                    font-size: 24px;
+                    line-height: 34px;
+                }
+            }
+            p{
+                padding-top: 20px;
+                color: #494949;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 22px;
+                @media screen and (min-width: $tablet-width){
+                    font-size: 18px;
+                    line-height: 24px;
+                }
+            }
+        }
+        .northwest-expand-card-buttons{
+            display: flex;
+            align-items: center;
+            padding-top: 20px;
+            flex-shrink: 0;
+            padding-left: 1px;
+            padding-right: 1px;
+            @media screen and (min-width: $tablet-width){
+                padding-top: 0;
+            
+            }
+            .review-hero-button{
+                width: 100%;
+                @media screen and (min-width: $tablet-width){
+                    padding: 0 0!important;
+                }
+                a{
+                    p{
+                        color: white;
+                        padding: 17px 0 17px 17px;
+                        flex-shrink: 0;
+                        @media screen and (min-width: $tablet-width){
+                            font-size: 16px;
+                            line-height: 22px;
+                            padding: 17px 0 17px 17px;
+                        }
+                        @media screen and (min-width: 800px){
+                            font-size: 20px;
+                            line-height: 28px;
+                            padding: 17px 0 17px 22px;
+                        }
+                    }
+                    img{
+                        @media screen and (min-width: $tablet-width){
+                            padding-right: 17px;
+                        } 
+                        @media screen and (min-width: 800px){
+                            padding-right: 22px;
+                        } 
+                    }
+                }
+            }
+            .northwest-expand-card-arrow{
+                transition: transform .3s ease;
+                span{
+                    cursor: pointer;
+                    img{
+                        transform: rotate(90deg);
+                    }
+                }
+            }
+        }
+    }
+    .northwest-expand-card-paragraph{
+        padding-top: 30px;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height .5s ease-out;
+        
+        p{
+            color: $title-menu;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 22px;
+            padding: 0 10px;
+            @media screen and (min-width: $phone-width){
+                font-size: 18px;
+                line-height: 28px;
+            }
+        }
+        span{
+            cursor: pointer;
+            p{
+                padding: 22px 10px 30px 10px;
+                color: $details;
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 22px;
+                @media screen and (min-width: $phone-width){
+                    font-size: 18px;
+                    line-height: 28px;
+                }
+            }
+        }
+    }
+}
+
+
+
+  
+
+// ____________________________________________________________________________________

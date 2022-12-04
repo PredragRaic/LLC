@@ -1,0 +1,71 @@
+
+// slider arrow buttons--------------------------------
+
+.slick-arrow{
+    position: absolute;
+    z-index: 2;
+}
+.prev-arrow{
+    left: 50%;
+    bottom: -60px;
+    transform: translateX(calc(-50% - 30px));
+    width: 50px;
+    height: 50px;
+    background-image: url('/frontend/src/styles/img/ei_arrow-left.svg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    cursor: pointer;
+    border: none;
+    border-radius: 50%;
+    background-color: white;
+}
+.next-arrow{
+    left: 50%;
+    bottom: -60px;
+    transform: translateX(calc(-50% + 30px));
+    width: 50px;
+    height: 50px;
+    background-image: url('/frontend/src/styles/img/ei_arrow-right.svg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    cursor: pointer;
+    border: none;
+    border-radius: 50%;
+    background-color: white;
+}
+
+// ------------------------------------------------------
+
+
+// Slider slick buttons------------------------------------
+
+.slick-dots{
+    text-align: right!important;
+    top: 15px!important;
+    z-index: -1!important;
+    @media screen and (min-width: $tablet-width){
+        text-align: left!important;
+        top: 550px!important;
+        z-index: 5!important;
+    }
+    li{
+        width: 10px!important;
+        height: 10px!important;
+        border-radius: 50%!important;
+        background-color: $carousel-dots!important;
+        opacity: 1!important;
+        margin: 0 4px!important;
+        button{
+            &::before{
+                content: ''!important;
+            }
+        }
+    }
+    .slick-active{
+        background-color: $details!important;
+    }
+}
+
+// --------------------------------------------------------------------------

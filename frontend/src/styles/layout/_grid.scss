@@ -1,0 +1,123 @@
+.grid{
+    margin-top: 76px;
+    margin-bottom: 100px;
+    .grid-holder{
+        display: grid;
+        grid-template-columns: 1fr;
+        row-gap: 15px;
+        @media screen and (min-width: 600px){
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: repeat(5, 1fr);
+            column-gap: 25px;
+            row-gap: 25px;
+        }
+        @media screen and (min-width: 900px) {
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+        }
+        .grid-first{
+            grid-area: 1 / 1 / span 2;
+            @media screen and (min-width: 600px){
+                grid-area: 1 / 1 / span 2;
+            }
+        }
+        .grid-second{
+            @media screen and (min-width: 900px){
+                grid-area: 3 / 1 ;
+            }
+            
+        }
+        .grid-third{
+            @media screen and (min-width: 900px){
+                grid-area: 1 / 2 ;
+            }
+            
+        }
+        .grid-fourth{
+            @media screen and (min-width: 600px){
+                grid-area: 1 / 2;
+            }
+            @media screen and (min-width: 900px){
+                grid-area: 2 / 2 ;
+            }
+        }
+        .grid-fifth{
+            @media screen and (min-width: 600px){
+                grid-area: 2 / 2;
+            }
+            @media screen and (min-width: 900px){
+                grid-area: 3 / 2 ;
+            }
+        }
+        .grid-sixth{
+            @media screen and (min-width: 600px){
+                grid-area: 3 / 2;
+            }
+            @media screen and (min-width: 900px){
+                grid-area: 1 / 3 ;
+            }
+        }
+        .grid-last{
+            grid-area: 8 / 1 / span 2;
+            @media screen and (min-width: 600px){
+                grid-area: 4 / 2 / span 2;
+            }
+            @media screen and (min-width: 900px){
+                grid-area: 2 / 3 / span 2 ;
+            }
+        }
+        .grid-section{
+            border-radius: 10px;
+            background-color: $background-grey;
+            padding: 22px 14px 0 14px;
+            h5{
+                font-family: 'Public Sans';
+                color: $orange-button;
+                font-style: normal;
+                font-weight: 700;
+                font-size: 32px;
+                line-height: 39px;
+                padding-top: 3px;
+                padding-bottom: 2px;
+                @media screen and (min-width: 600px){
+                    font-size: 40px;
+                    line-height: 48px;
+                }
+            }
+            h6{
+                
+                font-family: 'Public Sans';
+                font-style: normal;
+                border-radius: 10px;
+                color: $title-grid;
+                font-weight: 700;
+                font-size: 26px;
+                line-height: 32px; 
+                padding-left: 6px;
+                padding-right: 26px;
+                padding-bottom: 9px;
+                @media screen and (min-width: 600px){
+                    font-size: 30px;
+                    line-height: 40px;
+                }
+            }
+        }
+        .grid-orange{
+            background-color: $background-grid-section-h5;
+        }
+        .grid-blue{
+            background-color: $background-grid-section-blue;
+            h6{
+                color: white;
+            }
+        }
+        .grid-blue-2{
+            background-color: $background-lightblue;
+            h5{
+                color: $title-grid;
+
+            }
+        }
+    }
+    
+}

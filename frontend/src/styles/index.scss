@@ -1,0 +1,35 @@
+// Abstract files
+@import "abstracts/_mixin.scss";
+@import "abstracts/_variables.scss";
+
+// Vendor Files
+@import "vendors/_bootstrap.scss";
+
+// Core files
+@import "core/_reset.scss";
+@import "core/_typography.scss";
+
+// Components
+@import "components/_buttons.scss";
+@import "components/_carousel.scss";
+@import "components/_slider.scss";
+@import "components/slider-related";
+
+// Layout
+@import "layout/_footer.scss";
+@import "layout/_grid.scss";
+@import "layout/_header.scss";
+@import "layout/_navigation.scss";
+@import "layout/_slidebar.scss";
+
+// Sections
+@import "sections/_hero.scss";
+@import "sections/_cta.scss";
+@import "sections/rectangle-plus-h2-title.scss";
+@import "sections/frequently-asked-question";
+
+// Pages
+@import "pages/_about.scss";
+@import "pages/_home.scss";
+@import "pages/_review"
+
